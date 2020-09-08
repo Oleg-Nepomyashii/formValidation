@@ -1,0 +1,67 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.title {
+  @include fontOpenSans();
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+  padding: 60px 0 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.steps_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps_wrapper_line {
+  border: 1px solid #E8E8E8;
+  opacity: 0.2;
+  width: 30.26%;
+  max-width: 184px;
+  height: 2px;
+  margin: 0 8px;
+}
+
+.step {
+  @include fontOpenSans();
+  font-size: 18px;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #1E34A5;
+  border-radius: 50%;
+  background: #1E34A5;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step ~ .step_active {
+  background: #DA3F5B;
+  border-color: #DA3F5B;
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 30px;
+    line-height: 60px;
+    padding: 20px 0 10px;
+  }
+
+  .step {
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+  }
+
+  .steps_wrapper_line {
+    width: 30.26%;
+    max-width: 100px;
+  }
+}

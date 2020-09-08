@@ -1,0 +1,10 @@
+@import "../styles/variables";
+
+.kokoko {
+    margin: 8px 0;
+}
+
+.error {
+    border: 1px solid $formErrorColor;
+    border-radius: 4px;
+}
