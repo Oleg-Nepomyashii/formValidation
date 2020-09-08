@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import "variables";
+@import "mixins";
+
+*,::before,::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(228.75deg, #216190 19.65%, #0834D0 81.25%);
+  min-height: 100vh ;
+}
+
+.wrapper {
+  max-width: 628px;
+  margin: auto;
+  padding: 0 10px;
+}

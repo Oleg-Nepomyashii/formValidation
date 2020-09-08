@@ -1,0 +1,11 @@
+@mixin fontOpenSans {
+  font-family:'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+@mixin formLabel {
+  font-size: 14px;
+  line-height: 100%;
+  color: #636363;
+  font-weight: 600;
+}

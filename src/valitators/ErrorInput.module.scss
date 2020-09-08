@@ -1,10 +1,19 @@
+@import "../styles/mixins";
 @import "../styles/variables";
 
-.kokoko {
+.distance {
     margin: 8px 0;
 }
 
-.error {
-    border: 1px solid $formErrorColor;
-    border-radius: 4px;
+.errorWrapper {
+    position: relative;
+}
+
+.validation_error {
+    margin: 0;
+    @include fontOpenSans();
+    font-size: 12px;
+    line-height: 100%;
+    color: $formErrorColor;
+    position: absolute;
 }

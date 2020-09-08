@@ -1,5 +1,5 @@
-@import "../styles/mixins";
-@import "../styles/variables";
+@import "../../styles/mixins";
+@import "../../styles/variables";
 
 .title {
   @include fontOpenSans();
@@ -8,7 +8,7 @@
   line-height: 60px;
   margin: 0;
   padding: 60px 0 20px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .steps_wrapper_line {
-  border: 1px solid #E8E8E8;
+  border: 1px solid $lineColor;
   opacity: 0.2;
   width: 30.26%;
   max-width: 184px;
@@ -33,18 +33,18 @@
   font-weight: bold;
   height: 30px;
   width: 30px;
-  border: 1px solid #1E34A5;
+  border: 1px solid $stepBackgroud;
   border-radius: 50%;
-  background: #1E34A5;
-  color: #ffffff;
+  background: $stepBackgroud;
+  color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .step ~ .step_active {
-  background: #DA3F5B;
-  border-color: #DA3F5B;
+  background: $stepBackgroudActive;
+  border-color: $stepBackgroudActive;
 }
 
 @media screen and (max-width: 540px) {

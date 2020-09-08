@@ -1,19 +1,18 @@
 import React from "react";
-import style from './ololo.module.scss'
+import style from './ErrorInput.module.scss'
 
-const Ololo = ({children , type , show}) => {
-    console.log(type)
+const ErrorInput = ({children , type , show}) => {
     return (
-        <>
-            <div className={`${show ? style.error : ''} ${style.kokoko}`}>
+        <div className={style.errorWrapper}>
+            <div className={style.distance}>
                 {children}
             </div>
             {
-                show && <p className="validation_error">{type}</p>
+                show && <p className={style.validation_error}>{type}</p>
             }
 
-        </>
+        </div>
     )
 }
 
-export default Ololo
+export default ErrorInput
